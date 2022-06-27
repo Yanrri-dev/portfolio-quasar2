@@ -1,22 +1,22 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref } from "vue";
 import { useQuasar } from "quasar";
 
 const $q = useQuasar();
 
 const leftDrawerOpen = ref(false);
-const isDarkmode = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 };
-
-watch(isDarkmode, (isDarkmode) => {
-  $q.dark.set(isDarkmode);
-});
 </script>
 
 <template>
-  <q-header elevated class="bg-primary text-white">
+  <q-header
+    bordered
+    :class="
+      $q.dark.isActive ? 'bg-dark text-white' : 'bg-white text-blue-grey-8'
+    "
+  >
     <q-toolbar>
       <q-btn
         dense
@@ -27,14 +27,38 @@ watch(isDarkmode, (isDarkmode) => {
         class="lt-sm"
       />
 
-      <q-btn to="/" flat> Portfolio </q-btn>
+      <q-btn
+        stretch
+        dense
+        to="/"
+        flat
+        :ripple="{ color: 'green' }"
+        :text-color="$q.dark.isActive ? 'white' : 'blue-grey-8'"
+      >
+        Portfolio
+      </q-btn>
 
       <q-space />
 
-      <q-tabs class="gt-xs text-center">
-        <q-route-tab to="/projects" name="projects" label="Projects" />
-        <q-route-tab to="/about" name="about" label="About Me" />
-        <q-route-tab to="/contact" name="contact" label="Contact" />
+      <q-tabs class="gt-xs text-center" indicator-color="green-13">
+        <q-route-tab
+          :ripple="{ color: 'green' }"
+          to="/projects"
+          name="projects"
+          label="Projects"
+        />
+        <q-route-tab
+          :ripple="{ color: 'green' }"
+          to="/about"
+          name="about"
+          label="About Me"
+        />
+        <q-route-tab
+          :ripple="{ color: 'green' }"
+          to="/contact"
+          name="contact"
+          label="Contact"
+        />
       </q-tabs>
 
       <q-space />
@@ -43,8 +67,10 @@ watch(isDarkmode, (isDarkmode) => {
         dense
         flat
         round
-        @click="isDarkmode = !isDarkmode"
-        :icon="isDarkmode ? 'mdi-white-balance-sunny' : 'mdi-weather-night'"
+        @click="$q.dark.toggle()"
+        :icon="
+          $q.dark.isActive ? 'mdi-white-balance-sunny' : 'mdi-weather-night'
+        "
       >
       </q-btn>
     </q-toolbar>

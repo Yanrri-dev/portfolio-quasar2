@@ -1,10 +1,30 @@
 <template>
-  <q-footer bordered class="bg-dark text-white">
+  <q-footer class="bg-dark text-white">
     <q-toolbar>
-      <q-toolbar-title>
-        <div class="text-center">Designed & Built by Nicolás Rojas</div>
+      <q-toolbar-title class="text-center">
+        Designed & Built by Nicolás Rojas
       </q-toolbar-title>
     </q-toolbar>
+    <div class="q-pa-md">
+      <div class="text-center text-grey-5 q-gutter-md" style="font-size: 2em">
+        <q-btn
+          href="https://github.com/Yanrri-dev"
+          icon="mdi-github"
+          target="_blank"
+          :ripple="{ color: 'green' }"
+        />
+        <q-btn
+          href="https://www.linkedin.com/in/njrp/"
+          icon="mdi-linkedin"
+          target="_blank"
+        />
+        <q-btn
+          href="https://www.instagram.com/nescondido/"
+          icon="mdi-instagram"
+          target="_blank"
+        />
+      </div>
+    </div>
   </q-footer>
 </template>
 
