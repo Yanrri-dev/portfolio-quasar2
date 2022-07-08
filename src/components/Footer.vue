@@ -8,17 +8,27 @@
     <div class="q-pa-md">
       <div class="text-center text-grey-5 q-gutter-md" style="font-size: 2em">
         <q-btn
+          padding="none"
+          dense
+          round
           href="https://github.com/Yanrri-dev"
           icon="mdi-github"
           target="_blank"
           :ripple="{ color: 'green' }"
         />
         <q-btn
+          flat
+          padding="none"
+          dense
+          round
           href="https://www.linkedin.com/in/njrp/"
           icon="mdi-linkedin"
           target="_blank"
         />
         <q-btn
+          padding="none"
+          dense
+          round
           href="https://www.instagram.com/nescondido/"
           icon="mdi-instagram"
           target="_blank"
@@ -29,3 +39,9 @@
 </template>
 
 <script setup></script>
+
+<style>
+.q-btn .q-focus-helper {
+  background-color: green;
+}
+</style>
