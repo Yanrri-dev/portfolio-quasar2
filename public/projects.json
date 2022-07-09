@@ -2,21 +2,35 @@
     "projects": [
         {
           "id": 1,
-          "name": "Project 1",
-          "description": "This is project 1",
-          "link": "https://www.google.com"
+          "name": "HDEP",
+          "description": "This is a project to administrate evaluation rubrics of the students for differents courses",
+          "languages-icons": ["php","laravel", "tailwind", "jquery", "sql"],
+          "img": "hdep.png", 
+          "links": {
+            "github":"https://github.com/Yanrri-dev/hdepLaravel",
+            "deployed":"https://github.com/Yanrri-dev/hdepLaravel"
+          }
         },
         {
           "id": 2,
-          "name": "Project 2",
-          "description": "This is project 2",
-          "link": "https://www.google.com"
+          "name": "MindFulnessVR App",
+          "description": "This is a project to visualize landscape scenes in virtual reality to get mindfulness experience",
+          "img": "mindfulness.png",
+          "links": {
+            "github":"https://github.com/Yanrri-dev/MindFulnessVR",
+            "deployed":"https://github.com/Yanrri-dev/MindFulnessVR"
+          }
         },
         {
           "id": 3,
-          "name": "Project 3",
+          "name": "Country API VueJS",
           "description": "This is project 3",
-          "link": "https://www.google.com"
+          "languages-icons": ["javascript","vue", "bootstrap", "jquery"],
+          "img": "countries-api.png",
+          "links": {
+            "github":"https://github.com/Yanrri-dev/vue3-paises",
+            "deployed":"https://vue3-api-paises.netlify.app"
+          }
         }
       ]
 }
