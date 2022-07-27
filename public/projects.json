@@ -4,7 +4,7 @@
           "id": 1,
           "name": "HDEP",
           "description": "This is a project to administrate evaluation rubrics of the students for differents courses",
-          "languages-icons": ["php","laravel", "tailwind", "jquery", "sql"],
+          "languagesIcons": ["language-php","laravel", "tailwind", "jquery", "database"],
           "img": "hdep.png", 
           "links": {
             "github":"https://github.com/Yanrri-dev/hdepLaravel",
@@ -15,6 +15,7 @@
           "id": 2,
           "name": "MindFulnessVR App",
           "description": "This is a project to visualize landscape scenes in virtual reality to get mindfulness experience",
+          "languagesIcons": ["language-php","laravel", "tailwind", "jquery", "database"],
           "img": "mindfulness.png",
           "links": {
             "github":"https://github.com/Yanrri-dev/MindFulnessVR",
@@ -24,13 +25,25 @@
         {
           "id": 3,
           "name": "Country API VueJS",
-          "description": "This is project 3",
-          "languages-icons": ["javascript","vue", "bootstrap", "jquery"],
+          "description": "A simple app to get information about countries consuming API with VueJS",
+          "languagesIcons": ["language-javascript","vuejs", "bootstrap", "jquery"],
           "img": "countries-api.png",
           "links": {
             "github":"https://github.com/Yanrri-dev/vue3-paises",
             "deployed":"https://vue3-api-paises.netlify.app"
           }
+        },
+        {
+          "id": 4,
+          "name": "ToDo List",
+          "description": "The classic ToDo List app builded in VueJS storing data in localStorage and using Vuex",
+          "languagesIcons": ["language-javascript","vuejs", "bootstrap", "jquery"],
+          "img": "hdep.png",
+          "links": {
+            "github":"https://github.com/Yanrri-dev/vue3-paises",
+            "deployed":"https://vue3-api-paises.netlify.app"
+          }
         }
+
       ]
 }
